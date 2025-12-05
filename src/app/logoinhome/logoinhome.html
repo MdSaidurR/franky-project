@@ -1,0 +1,9 @@
+
+<div class="container logoinhome">
+<div class="row row-cols-2 row-cols-md-5 g-4 text-center">
+  <div class="col" *ngFor="let icon of icons">
+    <img [src]="icon.image" class="img-fluid mb-3" style="height:60px" alt="">
+    <h6 class="fw-bold">{{ icon.name }}</h6>
+  </div>
+</div>
+</div>

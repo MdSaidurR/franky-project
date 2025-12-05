@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+   }
+
+.navbar-nav .nav-link {
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+  font-weight: 500;
+
+
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #eb2229 !important;
+}
+
+.businessSection{
+  background-color: #e1e1e1;
+}
+
+.business-title{
+ padding-top:50px;
+}
+
+.business-title h4{
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color:#4e4e4e;
+
+}
+
+
+.business-title p{
+   font-family: 'Montserrat', sans-serif !important;
+   font-size: 16px;
+  font-weight: 400;
+}
+
+.content-box{
+  background-color: #4e4e4e;
+}
+
+footer{
+  background-color:#eb2229;
+}
+
+.company-name{
+
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color:#4e4e4e;
+  padding-top:50px;
+  padding-bottom: 30px;
+}
+
+.company-subtitle{
+font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:#4e4e4e;
+}
+
+.company-description{
+font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color:#4e4e4e;
+  padding-bottom: 30px;
+}
+
+.logoinhome{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+
+.logoinhome h6{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color:#4e4e4e;
+
+}
+
+.form-label{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color:#4e4e4e;
+}

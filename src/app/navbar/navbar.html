@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" [routerLink]="'/'">
+    <img src="{{image}}" alt="Logo" style="height:60px; width:auto;">
+
+  </a>
+
+    <!-- Toggler Button -->
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/'" (click)="isMenuCollapsed = true">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/about'" (click)="isMenuCollapsed = true">ABOUT US</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/services'" (click)="isMenuCollapsed = true">SERVICES</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/services'" (click)="isMenuCollapsed = true">CAREER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/services'" (click)="isMenuCollapsed = true">INTEGRITY AND GOVERANCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" [routerLink]="'/services'" (click)="isMenuCollapsed = true">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

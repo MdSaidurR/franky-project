@@ -1,0 +1,15 @@
+<div *ngIf="card">
+   <img [src]="card.postimg" alt="{{ card.title }}" class="img-fluid mb-4 w-100">
+</div>
+
+<div class="container" *ngIf="card">
+  <h5 class="mb-4 fw-bold">{{ card.title }}</h5>
+
+  <p class="fs-5">{{ card.longdescription }}</p>
+
+</div>
+
+<!-- If card not found -->
+<div *ngIf="!card" class="container py-5">
+  <h4 class="text-danger">No details found.</h4>
+</div>

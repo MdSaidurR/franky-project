@@ -1,0 +1,35 @@
+<div class="businessSection">
+ <div class="container-fluid">
+  <div class="business-title">
+    <h4 class="fw-bold mb-3 text-center">OUR SERVICES</h4>
+    <p class="text-center">FRANKY’s diversified portfolio of privately held businesses began as a small earthmoving contractor in the late 1970’s. Today the Group encompasses diversified companies and multiple partnerships.</p>
+  </div>
+
+ <div class="row">
+  <div
+    *ngFor="let card of cards; let i = index"
+    [ngClass]="i < 2 ? 'col-md-6' : 'col-md-4'"
+    class="mb-4 d-flex">
+    <div class="card custom-card border-0 w-100 d-flex flex-column">
+
+      <!-- Top Image -->
+      <img class="card-img-top img-fluid card-image" [src]="card.image" alt="Construction">
+
+      <!-- Content Section -->
+      <div class="card-body content-box p-4 text-white">
+        <h4 class="fw-bold mb-3">{{ card.title }}</h4>
+
+        <p class="mb-4 description">{{ card.description }}</p>
+
+        <div class="text-end">
+          <a [routerLink]="['/service-details', card.id]" class="btn btn-outline-light rounded-0 px-4 slide-hover-btn">
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
